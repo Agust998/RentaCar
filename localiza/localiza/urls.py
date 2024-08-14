@@ -16,13 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from applocaliza import views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("",views.inicio),
-    path("cliente/",views.cliente),
-    path("empleado/",views.empleado),
-    path("reserva/",views.reserva),
-    path("vehiculo/",views.vehiculo),
+    path('', include("applocaliza.urls"))
 ]
