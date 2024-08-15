@@ -1,0 +1,14 @@
+{% extends "applocaliza/base.html" %}
+
+{% load static %}  
+{% block title %} Buscar Vehículo {% endblock  %}
+{% block main %}
+    <form action"" method="POST">
+        {% csrf_token %}
+        <table>
+            {{mi_formulario.as_table}}
+        <table>
+        <input type="submit" value="Enviar">
+    </forms>
+{% endblock main %}
+

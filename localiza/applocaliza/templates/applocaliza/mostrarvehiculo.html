@@ -1,0 +1,15 @@
+{% extends "applocaliza/base.html" %}
+
+{% load static %}
+
+{% block title %} inicio {% endblock title %}
+
+{% block main %}
+
+{%for vehiculo in auto %}
+    <li> Vehiculo: {{vehiculo.marca}} | Modelo: {{vehiculo.modelo}}</li>
+    {% empty %}
+    <li>No se encontraron vehículos.</li>
+{%endfor%}
+
+{% endblock main %}

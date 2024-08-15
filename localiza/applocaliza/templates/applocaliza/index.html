@@ -1,0 +1,58 @@
+{% extends "applocaliza/base.html" %}
+
+{% load static %}
+
+{% block main %}
+
+
+
+<!-- Content section 1-->
+<section id="scroll">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'applocaliza/assets/img/ONIX.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">Categoria Básica</h2>
+                    <p>Es un vehículo económico el cual podés circular por toda la ciudad con un consumo mínimo de combustible ya que cuenta con motor 1.2 y se adapta a cualquier aventura, dentro de sus limitaciones.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Content section 2-->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'applocaliza/assets/img/02.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <h2 class="display-4">Categoria Sedán</h2>
+                    <p>Disponemos de 2 subcategorias, automatico y sedan. Ambos cuentan con un gran confort para toda la familia ya que con su gran baul y ademas lugar dentro del auto para 5 pax, usted puede disfrutar de largos trayectos y buena compañia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Content section 3-->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'applocaliza/assets/img/03.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">Categoria OFFROAD</h2>
+                    <p>Por último tenemos las 4x4 que son para dirigirse a los lugares más recónditos a probar la fuerza en sus motores, contamos con caja automática y secuencial para el mejor rendimiento del mismo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock main %}
