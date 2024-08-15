@@ -1,0 +1,12 @@
+{% extends "empleado/base.html" %}
+{% load static %}
+{% block main %}
+
+<h1>EDITAR CLIENTE</h1>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <imput type="submit" value="editar">
+</form>
+{% endblock main%}

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from applocaliza.forms import registroFormulario
 from applocaliza.models import Cliente, Vehiculo
@@ -55,7 +55,7 @@ def buscarvehiculo(request):
 
             auto = Vehiculo.objects.filter(marca__icontains=informacion["auto"])
 
-            return render(request, "applocaliza/mostrarvehiculo.html", {"auto": auto})
+            return render(request, "applocaliza/mostrarvehiculo.html", {"auto": auto} )
     else:
         mi_formulario = buscarAuto()
 

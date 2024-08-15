@@ -1,0 +1,9 @@
+{% extends "empleado/base.html" %}
+{% load static %}
+{% block main %}
+
+<h1>LISTA DE CLIENTES</h1>
+{% for cliente in Ciente %}
+    <li>Nombre: {{Cliente.nombre{}}
+        <p>
+            <a href="{$ url 'detallecliente' Cliente.pk %}">ver"

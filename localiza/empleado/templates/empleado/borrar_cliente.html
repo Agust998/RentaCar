@@ -1,0 +1,13 @@
+{% extends "empleado/base.html" %}
+{% load static %}
+{% block main %}
+
+<h1> BORRAR CLIENTE <h1>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    ESTÁS SEGURO QUE DESEAS BORRAR EL CLIENTE {{Cliente.nombre}} - {{Cliente.email}} ??
+    <input type="submit" value="eliminar">
+</form>
+{% endblock main %}
+

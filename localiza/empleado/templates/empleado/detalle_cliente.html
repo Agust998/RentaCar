@@ -1,0 +1,12 @@
+{% extends "empleado/base.html" %}
+{% load static %}
+{% block main %}
+
+<h1>DETALLE CLIENTE</h1>
+
+<P>Nombre cliente: <i>{{Cliente.nombre}}</i></p>
+<P>Apellido cliente: <i>{{Cliente.apellido}}</i></p>
+<p>
+    <a href="{% url "Listacliente" %}">Regresar</a>
+</p>
+{% endblock main%}
